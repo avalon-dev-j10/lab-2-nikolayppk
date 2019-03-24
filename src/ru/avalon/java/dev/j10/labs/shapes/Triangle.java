@@ -21,11 +21,11 @@ public class Triangle implements Shape {
     }
     float a; //сторона 1 треугольника
     float b; //сторона 2 треугольника
-    float s = (a*b)/2; //Площадь треугольника
+    //float s = (a*b)/2; //Площадь треугольника
    
     @Override
     public float getArea(){
-        return s;
+        return (a*b)/2;
     }
     @Override
    public int getRotation(){
