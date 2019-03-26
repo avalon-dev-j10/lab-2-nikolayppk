@@ -14,7 +14,7 @@ package ru.avalon.java.dev.j10.labs.shapes;
  */
 public interface Shape {
     
-    static float PI = 3.14f;
+    
 
     /*
      * TODO: Закончить определение интерфейса 'Shape'

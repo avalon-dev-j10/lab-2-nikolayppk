@@ -15,12 +15,14 @@ public static void main(String[] args) {
         Random rand = new Random();
         Random rand1 = new Random(); // Рандомное значение 1
         Random rand2 = new Random(); // Рандомное значение 2
+        Random rand3 = new Random(); // Рандомное значение 3
              
         
         for (int i = 0; i < 10; i++){
         int prob = (int) (rand.nextDouble()*90);
         int a = (int) (1 + rand1.nextDouble()*30);
         int b = (int) (1 + rand2.nextDouble()*30);
+        int c = (int) (1 + rand3.nextDouble()*30);
                
             if (prob < 30) {
             shapes[i] = new Circle(a);
@@ -32,7 +34,7 @@ public static void main(String[] args) {
             System.out.println("Rectangle " + shapes[i].getArea());
             }
             else {
-            shapes[i] = new Triangle(a, b);
+            shapes[i] = new Triangle(a, b, c);
             System.out.println("Triangle "  + shapes[i].getArea());}
         }  
         System.out.println("Max S = " + getmaxS());
