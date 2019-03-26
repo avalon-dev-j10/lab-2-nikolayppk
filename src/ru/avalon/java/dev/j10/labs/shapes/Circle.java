@@ -12,6 +12,11 @@ public class Circle implements Shape{
      public Circle (float r){
         this.r = r;
            }
+    String name = "Circle";
+    public String getName(String name){
+        this.name = name;
+        return name;
+    }
     
     float r; //радиус
     //float s = r;//PI*r*r; //Площадь круга

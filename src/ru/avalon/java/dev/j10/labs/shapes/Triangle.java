@@ -19,6 +19,11 @@ public class Triangle implements Shape {
         this.a = a;
         this.b = b;
     }
+    String name = "Triangle";
+    public String getName(String name){
+        this.name = name;
+        return name;
+    }
     float a; //сторона 1 треугольника
     float b; //сторона 2 треугольника
     //float s = (a*b)/2; //Площадь треугольника

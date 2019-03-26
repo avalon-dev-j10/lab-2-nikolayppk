@@ -13,7 +13,11 @@ public class Rectangle implements Shape {
         this.a = a;
         this.b = b;
     }
-    
+     String name = "Rectangle";
+    public String getName(String name){
+        this.name = name;
+        return name;
+    }
     float a; //длина прямоугольника
     float b; //ширина прямоугольника
    // float s = a*b; //площадь 

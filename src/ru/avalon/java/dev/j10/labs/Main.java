@@ -7,9 +7,10 @@ import ru.avalon.java.dev.j10.labs.shapes.Triangle;
 import java.util.Random;
 
 public class Main {
-
-    public static void main(String[] args) {
-        Shape[] shapes = new Shape [10];
+public static Shape[] shapes = new Shape [10];
+    
+public static void main(String[] args) {
+        
         
         Random rand = new Random();
         Random rand1 = new Random(); // Рандомное значение 1
@@ -34,23 +35,14 @@ public class Main {
             shapes[i] = new Triangle(a, b);
             System.out.println("Triangle "  + shapes[i].getArea());}
         }  
-        
-            /*static  maxS(){
-            for (int j = 0; j < 10; j++ ){
-            if (this.shapes[j].getArea() > this.shapes[j + 1].getArea()){
-            float max = shapes[j].getArea();
-                return max;
-                        }
-            }
-    }*/
-    
+        System.out.println("Max S = " + getmaxS());
         
         /*
          * TODO: Выполнить действия над массивом 'shapes'
          *
          * 1. Проинициализировать переменную 'shapes' массивом
          *    содержащим 10 произвольных фигур. Массив должен
-         *    содержать экземпляры классов Circle, ReRectanglectangle
+         *    содержать экземпляры классов Circle, Rectangle
          *    и Triangle.
          *
          * 2. Найти в массиве 'shapes' фигуру с максимальной
@@ -58,4 +50,14 @@ public class Main {
          *    статический метод в текущем классе (Main).
          */
     }
+            public static float getmaxS() {
+            float max = 0;
+            for (int j = 0; j < 10; j++ ){
+            if (shapes[j].getArea() > max){
+            max = shapes[j].getArea();
+            }
+            }
+            return max;
+            }          
+    
 }
