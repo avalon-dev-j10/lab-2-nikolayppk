@@ -13,13 +13,14 @@ public static void main(String[] args) {
         
         
         Random rand = new Random();
+        
          
         for (int i = 0; i < 10; i++){
         int prob = (int) (1 + rand.nextDouble()*3);
-        int a = (int) (1 + rand.nextDouble()*30);
-        int b = (int) (1 + rand.nextDouble()*30);
-        int c = (int) (1 + rand.nextDouble()*30);
-            switch (prob){
+        int a = (int) (1 + rand.nextDouble()*90);
+        int b = (int) (1 + rand.nextDouble()*90);
+        int c = (int) (1 + rand.nextDouble()*90);
+          /*  switch (prob){
             case 1: 
             shapes[i] = new Circle(a);
             System.out.println("Circle "  + shapes[i].getArea());
@@ -33,8 +34,8 @@ public static void main(String[] args) {
             System.out.println("Triangle "  + shapes[i].getArea());
         }
         }
-        
-         /*   if (prob < 30) {
+        */
+           if (prob < 30) {
             shapes[i] = new Circle(a);
             //System.out.println("Радиус= " + a);
             System.out.println("Circle "  + shapes[i].getArea());
@@ -47,7 +48,7 @@ public static void main(String[] args) {
             shapes[i] = new Triangle(a, b, c);
             System.out.println("Triangle "  + shapes[i].getArea());}
         }  
-        */
+        
         System.out.println("Max S = " + getmaxS());
         
         /*
