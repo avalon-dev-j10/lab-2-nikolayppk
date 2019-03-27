@@ -31,7 +31,7 @@ public class Triangle implements Polygon {
     
     @Override
     public float getArea(){
-       float p =  getPerimeter() / 2; 
+    float p =  getPerimeter() / 2; 
        return (float) Math.sqrt(p * (p - a) * (p - b) * (p - c) );
     }
    

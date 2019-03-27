@@ -13,29 +13,30 @@ public static void main(String[] args) {
         
         
         Random rand = new Random();
-        
          
         for (int i = 0; i < 10; i++){
         int prob = (int) (1 + rand.nextDouble()*3);
-        int a = (int) (1 + rand.nextDouble()*90);
-        int b = (int) (1 + rand.nextDouble()*90);
-        int c = (int) (1 + rand.nextDouble()*90);
-          /*  switch (prob){
+        int a = (int) (1 + rand.nextDouble()*100);
+        int b = (int) (1 + rand.nextDouble()*a);
+        int c = (int) (a + rand.nextDouble()*b);
+          
+            switch (prob){
             case 1: 
             shapes[i] = new Circle(a);
             System.out.println("Circle "  + shapes[i].getArea());
-            break;
-            case 2:
+            break;            case 2:
             shapes[i] = new Rectangle(a, b);
             System.out.println("Rectangle " + shapes[i].getArea());
             break;
             case 3:
+            
             shapes[i] = new Triangle(a, b, c);
             System.out.println("Triangle "  + shapes[i].getArea());
+            break;    
+            }
         }
-        }
-        */
-           if (prob < 30) {
+            /* Метод №2:
+            if (prob < 30) {
             shapes[i] = new Circle(a);
             //System.out.println("Радиус= " + a);
             System.out.println("Circle "  + shapes[i].getArea());
@@ -46,8 +47,12 @@ public static void main(String[] args) {
             }
             else {
             shapes[i] = new Triangle(a, b, c);
-            System.out.println("Triangle "  + shapes[i].getArea());}
-        }  
+            System.out.println("Triangle "  + shapes[i].getArea());
+            System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
+            System.out.println((a+ b+c)/2);}
+            } */
         
         System.out.println("Max S = " + getmaxS());
         
